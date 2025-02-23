@@ -1,10 +1,8 @@
 // CSC 221 Chapter 2 Programming Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-// Program 2: Distance per Tank of Gas
-// This program calculates the distance a vehicle can travel on one tank of gas in town and on the highway.
-// Start
-// Defines the known constants, Gas Tank Capacity, Miles per Gallon in Town, and Miles per Gallon on the Highway.
-// Calculates the distance the vehicle can travel on one tank of gas in town and on the highway.
+// Program 3: Energy Drink Consumption
+// Defines constants for total number of customers, percentage of customers purchasing energy drinks, and percentage of customers preferring citrus-flavored energy drinks.
+// Calculates the number of customers purchasing one or more energy drinks per week and of those the number of customers preferring citrus-flavored energy drinks.
 // Displays the results.
 // End the program with a return 0 statement. 
 
@@ -14,17 +12,17 @@ using namespace std;
 
 int main() {
     // Define constants
-    const double GAS_TANK = 20.0; // in gallons
-    const double MPG_TOWN = 23.5;      // miles per gallon in town
-    const double MPG_HIGHWAY = 28.9;   // miles per gallon on the highway
+    const int TOTAL_CUSTOMERS = 16500;
+    const double PERCENT_ENERGY_DRINK_BUYERS = 0.15;
+    const double PERCENT_CITRUS_PREFERENCE = 0.58;
 
-    // Calculate distances
-    double distanceTown = GAS_TANK * MPG_TOWN;
-    double distanceHighway = GAS_TANK * MPG_HIGHWAY;
+    // Calculate number of customers
+    int energyDrinkCustomers = TOTAL_CUSTOMERS * PERCENT_ENERGY_DRINK_BUYERS;
+    int citrusDrinkCustomers = energyDrinkCustomers * PERCENT_CITRUS_PREFERENCE;
 
     // Display results
-    cout << "The vehicle's fuel range is " << distanceTown << " miles on one tank in town." << endl;
-    cout << "The vehicle's fuel range is " << distanceHighway << " miles on one tank on the highway." << endl;
+    cout << "Approximate number of customers purchasing one or more energy drinks per week: " << energyDrinkCustomers << endl;
+    cout << "Approximate number of customers preferring citrus-flavored energy drinks: " << citrusDrinkCustomers << endl;
 
     return 0;
 }
