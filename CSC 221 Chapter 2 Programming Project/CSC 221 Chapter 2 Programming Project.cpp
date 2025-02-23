@@ -1,7 +1,12 @@
 // CSC 221 Chapter 2 Programming Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 // Program 2: Distance per Tank of Gas
-// Description: This program calculates the distance a vehicle can travel on one tank of gas in town and on the highway.
+// This program calculates the distance a vehicle can travel on one tank of gas in town and on the highway.
+// Start
+// Defines the known constants, Gas Tank Capacity, Miles per Gallon in Town, and Miles per Gallon on the Highway.
+// Calculates the distance the vehicle can travel on one tank of gas in town and on the highway.
+// Displays the results.
+// End 
 
 
 #include <iostream>
