@@ -1,39 +1,25 @@
 // CSC 221 Chapter 2 Programming Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-// Problem 1: Ocean Levels
-// Assuming the ocean's level is currently rising at about 1.5 millimeters per year, write a program that displays:
-// 1. The number of millimeters higher than the current level that the ocean's level will be in 5 years
-// 2. The number of millimeters higher than the current level that the ocean's level will be in 7 years
-// 3. The number of millimeters higher than the current level that the ocean's level will be in 10 years
-//
-// Start by defining the constant for the current rate of ocean level rise. Use the value of 1.5 for the rate.
-// Calculate the ocean level rise using the formula: rise = rate * years.
-// Display the results in a relation to the current ocean level.
-// End the program with a return 0 statement.
+// Program 2: Distance per Tank of Gas
+// Description: This program calculates the distance a vehicle can travel on one tank of gas in town and on the highway.
 
 
 #include <iostream>
+using namespace std;
 
-// Function to calculate ocean level rise
-double calculateRise(double rate, int years) {
-    return rate * years;
-}
+int main() {
+    // Define constants
+    const double GAS_TANK = 20.0; // in gallons
+    const double MPG_TOWN = 23.5;      // miles per gallon in town
+    const double MPG_HIGHWAY = 28.9;   // miles per gallon on the highway
 
-int main()
-{
-    // Define the rate of ocean level rise in millimeters per year
-    constexpr double riseRate = 1.5;
+    // Calculate distances
+    double distanceTown = GAS_TANK * MPG_TOWN;
+    double distanceHighway = GAS_TANK * MPG_HIGHWAY;
 
-    // Calculate ocean level rise for given years
-    double riseIn5Years = calculateRise(riseRate, 5);
-    double riseIn7Years = calculateRise(riseRate, 7);
-    double riseIn10Years = calculateRise(riseRate, 10);
-
-    // Display the results
-    std::cout << "The ocean level will rise by: " << std::endl;
-    std::cout << riseIn5Years << " mm in 5 years." << std::endl;
-    std::cout << riseIn7Years << " mm in 7 years." << std::endl;
-    std::cout << riseIn10Years << " mm in 10 years." << std::endl;
+    // Display results
+    cout << "The vehicle's fuel range is " << distanceTown << " miles on one tank in town." << endl;
+    cout << "The vehicle's fuel range is " << distanceHighway << " miles on one tank on the highway." << endl;
 
     return 0;
 }
