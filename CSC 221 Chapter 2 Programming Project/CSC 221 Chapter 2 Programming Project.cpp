@@ -3,9 +3,11 @@
 
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    // Display project title
+    std::cout << "William Woodard's Chapter 2 Programming Project" << std::endl;
+    std::cout << "-----------------------------------------------" << std::endl;
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
