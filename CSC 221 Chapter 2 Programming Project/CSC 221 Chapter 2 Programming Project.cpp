@@ -1,5 +1,16 @@
 // CSC 221 Chapter 2 Programming Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+// Problem 1: Ocean Levels
+// Assuming the ocean's level is currently rising at about 1.5 millimeters per year, write a program that displays:
+// 1. The number of millimeters higher than the current level that the ocean's level will be in 5 years
+// 2. The number of millimeters higher than the current level that the ocean's level will be in 7 years
+// 3. The number of millimeters higher than the current level that the ocean's level will be in 10 years
+//
+// Start by defining the constant for the current rate of ocean level rise. Use the value of 1.5 for the rate.
+// Calculate the ocean level rise using the formula: rise = rate * years.
+// Display the results in a relation to the current ocean level.
+// End the program with a return 0 statement.
+
 
 #include <iostream>
 
@@ -26,6 +37,7 @@ int main()
 
     return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
