@@ -3,9 +3,28 @@
 
 #include <iostream>
 
+// Function to calculate ocean level rise
+double calculateRise(double rate, int years) {
+    return rate * years;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    // Define the rate of ocean level rise in millimeters per year
+    constexpr double riseRate = 1.5;
+
+    // Calculate ocean level rise for given years
+    double riseIn5Years = calculateRise(riseRate, 5);
+    double riseIn7Years = calculateRise(riseRate, 7);
+    double riseIn10Years = calculateRise(riseRate, 10);
+
+    // Display the results
+    std::cout << "The ocean level will rise by: " << std::endl;
+    std::cout << riseIn5Years << " mm in 5 years." << std::endl;
+    std::cout << riseIn7Years << " mm in 7 years." << std::endl;
+    std::cout << riseIn10Years << " mm in 10 years." << std::endl;
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
