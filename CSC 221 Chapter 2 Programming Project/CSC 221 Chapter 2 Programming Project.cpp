@@ -6,7 +6,7 @@
 // Defines the known constants, Gas Tank Capacity, Miles per Gallon in Town, and Miles per Gallon on the Highway.
 // Calculates the distance the vehicle can travel on one tank of gas in town and on the highway.
 // Displays the results.
-// End 
+// End the program with a return 0 statement. 
 
 
 #include <iostream>
